@@ -45,7 +45,7 @@ class Game
     end
   end
   
-  def turn_count
+  def turn 
     
   end
   
