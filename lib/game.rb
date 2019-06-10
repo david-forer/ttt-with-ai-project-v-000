@@ -45,8 +45,25 @@ class Game
     end
   end
   
-  def turn 
-    
+ def turn
+    puts "It's #{current_player.token}'s turn."
+    @user_input = current_player.move(@board).to_i
+    if @board.valid_move?(@user_input.to_s)
+      board.update(@user_input, current_player)
+    else
+      puts "This move is invalid. Please try again"
+      turn
+    end
   end
+
+   def play
+    turn until over?
+    if won?
+      puts "Congratulations #{winner}!"
+    else draw?
+      puts "Cat's Game!"
+    end
+  end
+
   
 end
