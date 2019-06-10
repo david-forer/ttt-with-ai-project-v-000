@@ -39,7 +39,7 @@ class Game
   end
   
   def winner
-    
-    
+    if a win combination = won?
+      @winner = @board.cells[winning piece]
   end
 end
