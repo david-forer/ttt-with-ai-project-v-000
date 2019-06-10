@@ -38,4 +38,8 @@ class Game
     won? || draw?
   end
   
+  def winner
+    
+    
+  end
 end
