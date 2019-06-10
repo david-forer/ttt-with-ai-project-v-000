@@ -12,10 +12,6 @@ class Game
     [2,4,6],
     
     ]
-    
-    def board
-      
-      
-    end
+  
   
 end
