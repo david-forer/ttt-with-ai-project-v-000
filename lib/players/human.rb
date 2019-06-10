@@ -1,6 +1,6 @@
 module Players
   class Human < Players
-    def move
+    def move(board)
       puts "Please enter your selection"
       gets.strip
     end
