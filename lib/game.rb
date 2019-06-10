@@ -23,4 +23,18 @@ class Game
     @board.turn_count % 2 == 0 ? player_1 : player_2
   end
   
+  def won?
+    WIN_COMBINATIONS.detect do |winner|
+      
+    end 
+  end
+  
+  def draw?
+    @board.full? && !won?
+  end
+  
+  def over?
+    won? || draw?
+  end
+  
 end
